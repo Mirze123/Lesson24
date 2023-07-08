@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="gameOver" style="margin-bottom: 5rem; display: none;">
+            <span style="font-size: 3rem;">You Lose The Game</span>
+        </div>
+        <div class="inp-area">
+            <input type="number" placeholder="hour" max="24" min="0" id="hour">
+            <input type="number" placeholder="minute" max="59" min="0" id="minute">
+            <input type="number" placeholder="second" max="59" min="0" id="second">
+        </div>
+        <div>
+            <span id="spHour">00</span>
+            <span>:</span>
+            <span id="spMinute">00</span>
+            <span>:</span>
+            <span id="spSecond">00</span>
+        </div>
+        <div>
+            <button id="btnStop">Stop</button>
+            <button id="btnStart">Start</button>
+            <button id="btnReset">Reset</button>
+        </div>
+    </div>
+
+    <script src="./countdown.js"></script>
+</body>
+</html>
